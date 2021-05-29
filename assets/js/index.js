@@ -7,8 +7,9 @@ const sneaker = document.querySelector('.sneaker img');
 
 container.addEventListener('mousemove', (e) => {
     // console.log(e.pageX);
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+    // let xAxis = (window.innerWidth / 2 - e.pageX)/20;
+    // let yAxis = (window.innerHeight / 2 - e.pageY)/20; dont neeed
+    
 
     card.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`;
 })
@@ -18,7 +19,7 @@ container.addEventListener('mouseenter', e => {
     titile.style.transform = "translateZ(150px)";
     sizes.style.transform = "translateZ(150px)";
     purchase.style.transform = "translateZ(150px)";
-    sneaker.style.transform = "translateZ(150px)";
+    sneaker.style.transform = `translateZ(150px)`;
 })
 //Event out
 container.addEventListener('mouseleave', e => {
